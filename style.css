@@ -244,7 +244,7 @@ a{
 .city-img > img{
   height: 50vh;
   width: 200vw;
-  animation: ran 2s linear infinite;
+  animation: ran 1.8s linear infinite;
 }
 
 @keyframes ran{
