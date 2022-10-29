@@ -324,7 +324,7 @@ transform: translateX(0vw);
   height: 100px;
   top: 45%;
   right: 100px;
-  animation: move 2s linear infinite;
+  animation: move 20s linear infinite;
 }
 
 @keyframes move {
