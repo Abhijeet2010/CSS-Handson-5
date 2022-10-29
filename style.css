@@ -228,6 +228,11 @@ a{
 
 
 
+.body-3{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .sky-img {
     position: relative;
 
@@ -237,22 +242,29 @@ a{
     bottom: 200px;
 }
 .city-img > img{
-  width: 110vw;
-  animation: ran 0.3s linear infinite;
+  height: 50vh;
+  width: 200vw;
+  animation: ran 2s linear infinite;
 }
 
 @keyframes ran{
   0%{
-transform: translateX(0px);
+transform: translateX(0vw);
+  }
+25%{
+  transform: translateX(-25vw);
+}
+  50%{
+    transform: translateX(-50vw);
   }
 
   100%{
-    transform: translateX(-100px);
+    transform: translateX(-100vw);
   }
 }
 
 .road-img > img{
-  animation: run 0.1s linear infinite;
+  animation: run 0.2s linear infinite;
   height: 200px;
 }
 
@@ -293,11 +305,18 @@ transform: translateX(0px);
   left: 60%
 }
 
-.car-img > img{
+.car-img > .car--img{
   position: absolute;
   bottom: 100px;
   left: 38%;
   height: 200px;
+}
+
+.flag-img{
+  position: absolute;
+  height: 120px;
+  right: 33%;
+  bottom: 208px;
 }
 
 .sun{
@@ -305,9 +324,28 @@ transform: translateX(0px);
   height: 100px;
   top: 45%;
   right: 100px;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+0%{
+transform: translateX(0vw);
+}
+
+25%{
+  transform: translateX(-25vw);
+}
+50%{
+  transform: translateX(-50vw);
+}
+
+100%{
+  transform: translateX(-100vw);
+}
 }
 
 .container-new{
   position: relative;
   bottom: 550px;
 }
+
